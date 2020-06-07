@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\bin\Debug\StudyHelper.exe.config
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\bin\Debug\StudyHelper.exe
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\bin\Debug\StudyHelper.pdb
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\MainWindow.g.cs
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\App.g.cs
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper_MarkupCompile.cache
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper_MarkupCompile.lref
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\MainWindow.baml
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.g.resources
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.Properties.Resources.resources
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.csproj.GenerateResource.cache
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.exe
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.pdb
