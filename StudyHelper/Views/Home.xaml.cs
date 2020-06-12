@@ -1,5 +1,4 @@
-﻿using StudyHelper.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StudyHelper
+namespace StudyHelper.Views
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for Home.xaml
+    /// </summary>
+    public partial class Home : UserControl
     {
-        public MainWindow()
+        public Home()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DataContext = new HomeViewModel();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            DataContext = new AddObjectivesViewModel();
         }
     }
 }
