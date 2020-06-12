@@ -13,7 +13,11 @@
         <DataTemplate x:Name="HomeViewTemplate" DataType="{x:Type viewmodels:HomeViewModel}">
             <views:Home DataContext="{Binding}"/>
         </DataTemplate>
-        
+
+        <DataTemplate x:Name="ObjectivesViewTemplate" DataType="{x:Type viewmodels:ObjectivesViewModel}">
+            <views:Objectives DataContext="{Binding}"/>
+        </DataTemplate>
+
         <DataTemplate x:Name="AddObjectivesViewTemplate" DataType="{x:Type viewmodels:AddObjectivesViewModel}">
             <views:AddObjectives DataContext="{Binding}"/>
         </DataTemplate>
@@ -39,6 +43,7 @@
             <DockPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Background="LightGray">
                 <StackPanel>
                     <Button Content="Home" Click="Button_Click"/>
+                    <Button Content="Objectives" Click="Button_Click_2"/>
                     <Button Content="Add Objectives" Click="Button_Click_1"/>
                     <Button Content="Options"/>
                     <Button Content="Exit"/>

@@ -8,5 +8,6 @@ namespace StudyHelper.ViewModels
 {
     public class HomeViewModel
     {
+         
     }
 }

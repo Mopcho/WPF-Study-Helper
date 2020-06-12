@@ -17,3 +17,6 @@ C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Views\Home.g.cs
 C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Views\AddObjectives.baml
 C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Views\Home.baml
 C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Views\Objectives.g.cs
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Views\Objectives.baml
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.csprojAssemblyReference.cache

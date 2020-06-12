@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudyHelper.ViewModels
 {
-    public class AddObjectivesViewModel
+    public class ObjectivesViewModel
     {
 
     }
