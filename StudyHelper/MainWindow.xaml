@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudyHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" ResizeMode="NoResize">
     <StackPanel Width="800" Height="450">
         <Grid>
-            <Button Padding="10" Margin="20 20 0 0" Content="Start" Grid.Column="0" Click="Start_Click"/>
-            <Button Padding="10" Margin="20 20 0 0" Content="Pause" Grid.Column="1" Click="Button_Click"/>
-            <Button Padding="10" Margin="20 20 20 0" Content="Finish" Grid.Column="2"/>
+            <Button Padding="10" Margin="20 20 0 0" Content="Start" Grid.Column="0" Click="Start_Click" />
+            <Button Padding="10" Margin="20 20 0 0" Content="Pause" Grid.Column="1" Click="Stop_Click" />
+            <Button Padding="10" Margin="20 20 20 0" Content="Finish" Grid.Column="2" Click="Finish_Click" />
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -30,9 +30,11 @@
         <Grid Margin="0 50 0 0">
 
             <TextBlock x:Name="Time" Grid.Column="0" Margin="0 0 0 0" HorizontalAlignment="Left" Padding="10" FontWeight="DemiBold" FontSize="12" Text="Timer"/>
-            <TextBlock x:Name="Timer" Grid.Column="1" Margin="0 0 10 0" HorizontalAlignment="Right" Padding="10" FontWeight="DemiBold" FontSize="12" Text="Timer"/>
+            <Button Grid.Column="1" Content="Add Objectives" Click="AddObjectives_Click"/>
+            <TextBlock x:Name="Timer" Grid.Column="2" Margin="0 0 10 0" HorizontalAlignment="Right" Padding="10" FontWeight="DemiBold" FontSize="12" Text="Timer"/>
             
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>

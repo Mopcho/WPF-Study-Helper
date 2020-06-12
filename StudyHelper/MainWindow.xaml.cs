@@ -19,44 +19,63 @@ namespace StudyHelper
 {
     public partial class MainWindow : Window
     {
-        public bool isPause = false;
+        DispatcherTimer dt = new DispatcherTimer();
 
-        public bool isStarted = false;
+        DispatcherTimer dt1 = new DispatcherTimer();
+
+        DateTime dateTime = new DateTime();
+
+        DateTime dateTimer = new DateTime(2020, 10, 10, 0, 0, 0);
+
+        public List<string> objList = new List<string>();
 
         public MainWindow()
         {
             InitializeComponent();
-
-            //  DispatcherTimer timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
-            //   {
-            //       this.Time.Text = DateTime.Now.Hour.ToString() + " : " + DateTime.Now.Minute.ToString();
-            //   }, this.Dispatcher);
-            
         }
-        //bugged
+
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            dt1.Interval = TimeSpan.FromSeconds(1);
+            dt1.Tick += dt1_Ticker;
+            dt1.Start();
+            dt.Interval = TimeSpan.FromSeconds(1);
+            dt.Tick += dtTicker;
+        }
+
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            if (!isPause)
-            {
-                this.isPause = false;
-
-                DateTime date = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, 0, 0);
-
-                DispatcherTimer timer = new DispatcherTimer(new TimeSpan(0, 0, 1), DispatcherPriority.Normal, delegate
-                {
-
-                    date = date.AddSeconds(1);
-                    this.Timer.Text = date.Minute + " : " + date.Second.ToString();
-
-
-                }, this.Dispatcher);
-                
-            }
+            dt.Start();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Stop_Click(object sender, RoutedEventArgs e)
         {
-            timer.Stop();
+            this.dt.Stop();
+        }
+
+        private void Finish_Click(object sender, RoutedEventArgs e)
+        {
+            dateTimer = new DateTime(2020, 10, 10, 0, 0, 0);
+            this.dt.Stop();
+        }
+
+        private void AddObjectives_Click(object sender, RoutedEventArgs e)
+        {
+            Window win2 = new Window2();
+            win2.Show();
+        }
+
+        private void dt1_Ticker(object sender, EventArgs e)
+        {
+            dateTime = DateTime.Now;
+            this.Time.Text = $"{dateTime.Hour} : {dateTime.Minute} : {dateTime.Second}";
+        }
+
+        private void dtTicker(object sender, EventArgs e)
+        {
+            dateTimer = dateTimer.AddSeconds(1);
+            this.Timer.Text = $"{dateTimer.TimeOfDay}";
         }
     }
 }

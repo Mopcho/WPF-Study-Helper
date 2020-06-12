@@ -13,3 +13,5 @@ C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.csproj.Ge
 C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.csproj.CoreCompileInputs.cache
 C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.exe
 C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\StudyHelper.pdb
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Window2.g.cs
+C:\Users\PC\source\repos\StudyHelper\StudyHelper\obj\Debug\Window2.baml
