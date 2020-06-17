@@ -38,6 +38,7 @@ namespace StudyHelper
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             DataContext = new ObjectivesViewModel();
+            Console.WindowHeight = 180;
 
         }
         
